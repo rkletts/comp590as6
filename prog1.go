@@ -11,7 +11,7 @@ func power_h(n, p int64, res *big.Int) {
     fmt.Printf("Result: %v\n", res)
     return
   }
-  nextRes := new(big.Int).Mul(res, bigNewInt(n))
+  nextRes := new(big.Int).Mul(res, big.NewInt(n))
   go power_h(n, p-1, nextRes)
 }
 
