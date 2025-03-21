@@ -23,8 +23,8 @@ func power2(n, p int64) {
 }
 
 func main() {
-  n := int64(2)
-  p := int64(3)
+  n := int64(20)
+  p := int64(30)
   power2(n, p)
   time.Sleep(3 * time.Second)
   fmt.Printf("Result: %v\n", res)
